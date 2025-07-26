@@ -1,0 +1,41 @@
+What You’ll Do:
+
+As an intern or recent grad, you’ll work closely with senior engineers to build and test agentic workflows — AI systems that go beyond chat to actually execute complex tasks by interacting with APIs, tools, and data sources.
+
+You’ll:
+
+    Build early-stage prototypes of LLM-powered agents that complete tasks across enterprise tools like Jira, Notion, GitHub, and internal APIs.
+
+    Design step-by-step flows where AI can reason, retrieve info, call functions, and complete actions autonomously or with minimal user input.
+
+    Help evaluate open-source agent frameworks like LangChain, CrewAI, or AutoGen, and contribute to building internal tools from scratch when needed.
+
+    Assist in prompt engineering and retrieval-augmented generation (RAG) setups to make agent behavior more reliable.
+
+    Be part of regular team reviews and brainstorms — sharing learnings, debugging complex flows, and pushing ideas forward.
+
+Who You Are:
+
+You’re curious about how far AI can go beyond chat — and how it can actually get things done in real environments. You love solving problems and want to learn from a hands-on, experienced team.
+
+Must-Haves:
+
+    Proficiency in Python and some experience with LLM APIs (OpenAI, Claude, Hugging Face, etc.).
+
+    Interest in AI agents and how they interact with external tools or APIs.
+
+    Basic understanding of prompt engineering and chaining logic (even if just from projects or tutorials).
+
+    Eagerness to learn, build, and iterate fast. You’re not afraid of diving into docs, debugging, or pair programming.
+
+    Strong communication skills and the ability to explain your thought process clearly.
+
+Bonus Points:
+
+    Experience with tools like LangChain, AutoGen, or CrewAI.
+
+    Familiarity with FastAPI, Flask, or building simple REST APIs.
+
+    Worked on a side project or academic project using LLMs or automation agents.
+
+    Understanding of vector stores or semantic search.
