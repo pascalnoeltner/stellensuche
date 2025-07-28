@@ -20,6 +20,7 @@ def get_jobs_api(job, stadt, umkreis):
     if response.ok:
         data = response.json()
         stellen = data.get("stellenangebote", [])
+        refnrs = {}
 
         for i, stelle in enumerate(stellen, 1):
             titel = stelle.get("titel", "Kein Titel")
@@ -29,6 +30,7 @@ def get_jobs_api(job, stadt, umkreis):
             strasse = stelle.get("arbeitsort", {}).get("strasse", "")
             refnr = stelle.get("refnr", "")
             datum = stelle.get("aktuelleVeroeffentlichungsdatum", "")
+            refnrs[i] = refnr
         
             print(f"{i}. {titel}")
             print(f"   Arbeitgeber: {arbeitgeber}")
@@ -36,11 +38,13 @@ def get_jobs_api(job, stadt, umkreis):
             print(f"   Referenznummer: {refnr}")
             print(f"   Veröffentlicht am: {datum}")
             print("-" * 50)
-
+            
     else:
         print(f"Fehler: {response.status_code}")
+        
+    return refnrs
     
-def web_scrape(ref_nr="16752-r5445-S"):
+def web_scrape(ref_nr):
 
     URL = f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{ref_nr}"
 
@@ -56,7 +60,9 @@ def web_scrape(ref_nr="16752-r5445-S"):
 
         # Drucke gesamten sichtbaren Text der Seite
         text = page.inner_text("body")
-        print("\n=== Inhalt der Seite ===\n")
-        print(text)
+        #print("\n=== Inhalt der Seite ===\n")
+        #print(text)
 
         browser.close()
+        
+        return text

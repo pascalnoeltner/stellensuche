@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Suchergebnisse</title>
+</head>
+<body>
+    <h1>Gefundene Stellenangebote</h1>
+    <ul>
+        {% for refnr in refnrs %}
+            <li><a href="{{ url_for('show', refnr=refnr) }}">Job mit Referenznummer {{ refnr }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Neue Suche</a>
+</body>
+</html>
+

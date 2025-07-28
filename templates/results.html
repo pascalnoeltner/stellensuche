@@ -1,0 +1,7 @@
+<h2>Gefundene Jobs:</h2>
+<ul>
+  {% for i, ref in refnrs %}
+    <li><a href="{{ url_for('show', refnr=i) }}">Job {{ i + 1 }} – {{ ref }}</a></li>
+  {% endfor %}
+</ul>
+
